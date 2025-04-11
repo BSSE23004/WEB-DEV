@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Times, serif, sans-serif;
+  background: rgb(255, 175, 45);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 175, 45, 1) 0%,
+    rgba(220, 220, 205, 1) 31%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: rgb(216, 216, 216);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer {
+  padding: 0.3rem 1rem 2rem 1rem;
+  background-color: #535353;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  border-radius: 0.5rem;
+  width: 50vw;
+}
+.logoHeading {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+#leetcodeIcon {
+  width: 3rem;
+  height: 3rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.mainForm {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+.stats {
+  /* display: none; */
+  flex-direction: column;
+  justify-content: center;
+}
+.progress {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.progressItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#userName {
+  width: 66%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+#submitButton {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #535353;
+  color: rgb(216, 216, 216);
+  border-color: rgb(216, 216, 216);
+}
+
+.circle {
+  border: 0.25rem solid;
+  border-radius: 100%;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(216, 216, 216);
+  background-color: #535353;
+}
+
+.easyProgress {
+  border-color: green;
+  background: conic-gradient(green var(--easy, 0%), rgb(1, 24, 1) 0);
+}
+
+.mediumProgress {
+  border-color: yellow;
+  background: conic-gradient(yellow var(--medium, 0%), rgb(43, 43, 0) 0);
+}
+
+.hardProgress {
+  border-color: red;
+  background: conic-gradient(red var(--hard, 0%), rgb(49, 0, 0) 0);
+}
+
+.statsCards {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cards {
+  background-color: rgb(253, 156, 0);
+  padding: 1rem;
+  border-radius: 1rem;
+}

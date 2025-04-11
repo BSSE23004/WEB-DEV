@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #283048;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #859398, #283048);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #859398, #283048);
+}
+
+main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    transition: all 2s ease-in;
+}
+.logo img{
+    height: 10vh;
+    width : 10vw;
+    border-radius: 100%;
+    margin: 5%;
+}
+.logo:hover{
+    transform: rotate(360deg);
+}
+
+.navList{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    transition: all 2s ease-in;
+}
+.navList li h2 a{
+    text-decoration: none;
+    color: white;
+}
+.navList :hover{
+    transform: translate(0px,-10%);
+}
+.completeHead{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.wholePage{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    height: 80%;
+    width : 95vw;
+    padding : 3%;
+    margin : 3%;
+    box-shadow: rgba(0, 0, 0, 0.916) 0px 5px 15px;
+    border-radius: 3%;
+}
+
+.cards{
+    display: flex;
+    border-radius: 10%;
+    width: 100%;
+    padding: 3%;
+    margin-top: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 33%;
+    overflow:hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.2s ease-in;
+}
+
+.cards:hover{
+    transform: scale(1.02) translate(0px, -5%);
+}
+
+.rightBox{
+    width: 40vw;
+}
+
+.rightBox img{
+    margin-left: 10%;
+    height: 100%;
+    width: 80%;
+    border-radius: 10%;
+    transition: all 2s ease-in;
+}
+
+.rightBox img:hover{
+    transform: scale(1.05) translate(0px,-2%) rotate(360deg);
+}
+
+footer{
+    position: relative;
+    top: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

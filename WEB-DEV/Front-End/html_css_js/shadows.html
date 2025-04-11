@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadows</title>
+    <style>
+      :root {
+        --sabun: red;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        background-color: pink;
+        border: 1px solid black;
+      }
+      .box {
+        margin: 5px;
+        padding: 5px;
+        height: 30%;
+        width: 30%;
+        border: 1px solid black;
+        background-color: var(--sabun);
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+      }
+      #box2 {
+        box-shadow: 10px -10px 200px 3px aqua, 15px 15px 10px 3px red;
+        /* justify-self: center;
+        align-self: center; */
+        place-self: center;
+      }
+      #box4 {
+        text-shadow: 10px 5px 1px yellow;
+      }
+      #box5 {
+        text-shadow: 90px 20px 3px;
+      }
+      #h11 {
+        text-shadow: 3px 3px red, 7px 7px green, 10px 10px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h11">Welcome To Code Help</h1>
+    <div class="container">
+      <div class="box" id="box5">
+        <h1>Sabun</h1>
+      </div>
+      <div class="box" id="box4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore magni,
+          atque nisi mollitia ipsam sint aspernatur culpa repudiandae nemo iste
+          eum voluptatum minus commodi explicabo quibusdam praesentium, iusto
+          perspiciatis fugiat. Veniam, similique quae. Illum cum qui quae
+          consectetur, eligendi, sunt ipsam, aperiam animi inventore excepturi
+          ipsa omnis placeat. Eius, perspiciatis.
+        </p>
+      </div>
+      <div class="box" id="box1">
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="box2">
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="box3">
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

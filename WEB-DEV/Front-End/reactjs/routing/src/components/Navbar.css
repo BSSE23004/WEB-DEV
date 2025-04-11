@@ -1,0 +1,18 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active-link {
+  background-color: #111;
+}

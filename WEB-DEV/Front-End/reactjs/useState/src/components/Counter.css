@@ -1,0 +1,13 @@
+.counter {
+  box-shadow: 5px 5px 10px 10px rgba(71, 68, 68, 0.75);
+  border-radius: 5px;
+  width: 20vw;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}

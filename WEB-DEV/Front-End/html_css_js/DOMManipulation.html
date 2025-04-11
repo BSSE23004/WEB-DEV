@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOMManipulation</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding-left: 1rem;
+      }
+      #heading1 {
+        width: 14ch;
+        text-wrap: nowrap;
+        overflow: hidden;
+        animation: typing 3s ease infinite alternate-reverse;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0ch;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading1">Hello I am here</h1>
+    <h3 class="head3">a</h3>
+    <h3 class="head3">b</h3>
+    <h3 class="head3">c</h3>
+    <h3 class="head3">d</h3>
+    <p id="demo">Hello World</p>
+    <button onclick="myFunction()">Try it</button>
+    <p class="para">Click the button to change the content of the paragraph.</p>
+    <p class="para">
+      This example uses the getElementById method to find the paragraph with
+      id="demo".
+    </p>
+    <p>
+      Then it changes the content (innerHTML) of the paragraph to "Hello
+      JavaScript".
+    </p>
+    <p id="1122">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam impedit,
+      exercitationem iure vel incidunt laboriosam sunt et fugiat. Consequuntur
+      laborum doloremque veniam vero deserunt voluptate dicta, repellat quaerat,
+      eos iste esse vitae ad accusamus impedit? Iusto repellat corrupti
+      veritatis repellendus consectetur, ducimus voluptas accusantium, facilis
+      nemo rem aperiam amet enim!
+    </p>
+    <div></div>
+    <div></div>
+    <div></div>
+    <h2 id="head2"></h2>
+    <br />
+    <h7 class="wow">
+      <p>Lorem ipsum dolor sit amet.</p>
+      heehe
+      <span>This is in span tag</span>
+      <br />
+      <br />
+      <p style="display: none">
+        this para was hidden and written by .textContent but could Not written
+        by .innerText
+      </p>
+    </h7>
+    <br />
+    <br />
+    <p id="hello">HEHE</p>
+    <section style="border: solid">
+      <h2>Surprise MF</h2>
+      <ul>
+        <li id="unorderedListItem">This is going to be deleted!!!!</li>
+        <li>TEL</li>
+        <li>Surf</li>
+      </ul>
+      <section id="noice" style="border: solid">
+        <h3>
+          this is in my sec in which I am checking the inserting positions of
+          elements
+        </h3>
+      </section>
+    </section>
+    <script src="./DOMManipulation.js"></script>
+  </body>
+</html>

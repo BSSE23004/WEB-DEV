@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    background: #544a7d;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffd452, #544a7d);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ffd452, #544a7d);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#head{
+    padding: 3em;
+    place-items: center;
+    box-shadow: 0px 10px 40px 10px black;
+    border-radius: 5em;
+    color: wheat;
+    transition: all 0.3s linear;
+}
+
+#head:hover{
+    transform: translate(0%,-10%);
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(2em, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(15em, 1fr)) ;
+    gap: 50px 20px;
+    padding: 10px;
+    padding-top: 50px;
+    place-items: stretch;
+}
+
+.cards{
+    background: #659999;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f4791f, #659999);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f4791f, #659999);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    height: 100%;
+    width: 15em;
+    box-shadow: 5px 5px 10px 10px;
+    border-radius: 10px;
+    gap: 10px;
+    transition: all 0.3s linear;
+    overflow: hidden;
+}
+
+
+.cards:hover{
+    transform: scale(1.02) translate(0px,-3%);
+}
+
+.lowerBox{
+    padding: 2%;
+    gap: 10px;
+}
+
+#img1{
+    width: 100%;
+    height: 65%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#img1:hover{
+    opacity: 0.5;
+}
+
+
+#img2{
+    width: 40%;
+    height: 100%;
+    border-radius: 100%;
+    transition: all 1s linear;
+}
+
+#img2:hover{
+    transform: rotate(360deg);
+    opacity: 0.5;
+}
+
+
+.innerBox{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 3px;
+}
+
+.leftBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightBox{
+    width :50%;
+    place-content: center;
+}
+
+.rightBox button{
+    width: 3.5em;
+    height: 40%;
+    background: #659999;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f4791f, #659999);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f4791f, #659999);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: wheat;
+    border: none;
+    transition: all 0.2s linear;
+}
+
+.rightBox button:hover{
+    transform: scale(1.05) translate(0px,-10%);
+}
+
+.mainTextBox{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    transition: all 0.3s linear;
+    color: white;
+}
+
+.mainTextBox a{
+    color: white;
+    text-decoration: none;
+}
+
+.mainTextBox:hover{
+    transform: translate(0px,-5%);
+}
+
+.textBox{
+    transition: all 0.3s linear;
+    color: wheat;
+}
+.textBox:hover{
+    transform: translate(7%,-10%);
+}
+
+
+@media (max-width : 835px) {
+    .innerBox{
+        flex-direction: column;
+        place-items: center;
+    } 
+}

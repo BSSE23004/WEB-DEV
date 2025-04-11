@@ -1,0 +1,39 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#heading1{
+    /* border-color: black;
+    border-style: solid;
+    border-width: 10px; */
+    border:black,solid,10px;
+    border-radius: 10px;
+}
+
+#completeDiv{
+    background-color: purple;
+    border-radius: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    
+}
+
+#noice{
+    background-color: yellow;
+    margin: 0px;
+    border: 0px;
+    margin: auto;
+    margin-top: 10px;
+    width: 40%;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 30px;
+    border :solid,black,3px;
+
+}
+

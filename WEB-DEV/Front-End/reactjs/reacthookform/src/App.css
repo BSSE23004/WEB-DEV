@@ -1,0 +1,15 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.errorMsg {
+  color: red;
+}
+
+.error {
+  outline: 1.5px solid red;
+  border-radius: 0.1rem;
+}

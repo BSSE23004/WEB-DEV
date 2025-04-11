@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        border: black 5px solid;
+        display: flex;
+        background-color: blue;
+        margin: 5px;
+        padding: 5px;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: green;
+        margin: 5px;
+        padding: 5px;
+      }
+      .right {
+        width: 50%;
+        background-color: red;
+        margin: 5px;
+        padding: 5px;
+      }
+      p {
+        border: black 1px solid;
+        margin: 5px;
+        padding: 5px;
+      }
+      video {
+        height: 100%;
+        width: 100%;
+      }
+      #p1 {
+        background-color: yellow;
+      }
+      #p2 {
+        background-color: pink;
+      }
+
+      @media (min-width: 200px) and (max-width: 300px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <p class="paragraphs" id="p1">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
+          alias
+        </p>
+        <p class="paragraphs" id="p2">Lorem ipsum</p>
+      </div>
+      <div class="right">
+        <video src="./video.mp4" controls></video>
+      </div>
+    </div>
+  </body>
+</html>

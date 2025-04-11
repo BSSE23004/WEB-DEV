@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        border: solid 1px black;
+        /* width: 600px; */
+        height: 500px;
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* justify-content: space-evenly; justify-content is used for main-axis(x-axis in the case of row and y-axis for column ) */
+        /* align-items: end; align-items is used for cross-axis(perpendicular to the main-axis) */
+        /* flex-wrap: wrap-reverse; */
+        flex-flow: row wrap; /* flex-flow is used to tell both flex direction and wrap*/
+      }
+      .box {
+        border: solid 1px black;
+        width: 100px;
+        height: 100px;
+        flex-wrap: wrap;
+      }
+      #box1 {
+        background-color: red;
+        order: 3;
+        /* align-self: center; */
+      }
+      #box2 {
+        align-self: center;
+        /* justify-self: end; */
+        background-color: yellow;
+        order: 2;
+        /* flex-basis: 200px; used to set the width of the element */
+        flex: 200px, 3px, 100px; /*Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]*/
+      }
+      #box3 {
+        background-color: green;
+        order: 1;
+        flex-grow: 0.25;
+      }
+      #box4 {
+        background-color: blue;
+        order: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+    </div>
+  </body>
+</html>

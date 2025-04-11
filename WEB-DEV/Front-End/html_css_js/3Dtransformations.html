@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3Dtransformations</title>
+    <style>
+      .container {
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        border: 1px solid black;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .box {
+        border: 1px solid black;
+        background-color: yellow;
+      }
+      #rotatex:hover {
+        transform: rotateX(-135deg);
+      }
+      #rotatey:hover {
+        transform: rotateY(-135deg);
+      }
+
+      #rotatez:hover {
+        transform: rotateZ(-45deg);
+      }
+
+      #translatex:hover {
+        transform: translateX(300px);
+      }
+
+      #translatey:hover {
+        transform: translateY(300px);
+      }
+
+      #translatez:hover {
+        transform: perspective(300px) translateZ(-1000px);
+      }
+
+      #scalex:hover {
+        transform: scaleX(1.5);
+      }
+      #scaley:hover {
+        transform: scaleY(1.5);
+      }
+      #scalez:hover {
+        transform: perspective(100px) scaleZ(0.5) rotateX(-45deg);
+      }
+
+      #skewx:hover {
+        transform: skewX(45deg);
+      }
+      #skewy:hover {
+        transform: skewY(45deg);
+      }
+
+      img {
+        height: 100%;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="rotatex">
+        rotatex
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="rotatey">
+        rotatey
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="rotatez">
+        rotatez
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="translatex">
+        translatex
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="translatey">
+        translatey
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="translatez">
+        translatez
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="scalex">
+        scalex
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="scaley">
+        scaley
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="scalez">
+        scalez
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="skewx">
+        skewx
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+      <div class="box" id="skewy">
+        skewy
+        <img src="./Ibrahim.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

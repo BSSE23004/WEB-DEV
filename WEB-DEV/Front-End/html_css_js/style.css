@@ -1,0 +1,20 @@
+#randomtags {
+    background-color: blue;
+}
+
+#mainPage{
+    background-image :url(./Ibrahim.png) !important;
+}
+
+.hehe{
+    background-color: firebrick;
+}
+
+.hehe,#mainPage,#randomtags{
+    background-color: blue;
+
+}
+
+p.hehe{
+    background-color: aqua;
+}

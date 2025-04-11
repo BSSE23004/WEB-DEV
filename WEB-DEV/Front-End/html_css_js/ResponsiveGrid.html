@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive-Grid</title>
+    <style>
+      .container {
+        height: 100vh;
+        background-color: rgb(98, 98, 224);
+        padding: 40px;
+        border: 1px solid black;
+        display: grid;
+        /* grid-template-rows: repeat(3, 1fr); */
+        /* grid-template-rows: repeat(auto-fit, minmax(1em, 1fr)); */
+        /* grid-template-columns: repeat(2, 1fr); */
+        /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+        grid-template-areas:
+          "sideBar header header c1"
+          "sideBar c2 c3 c6"
+          "sideBar c4 c5 c6"; /*Give the layout in 2D matrix*/
+        gap: 40px;
+        place-items: stretch;
+      }
+      .box {
+        background-color: pink;
+        border: 1px solid black;
+        place-content: center;
+        text-align: center;
+      }
+      #header {
+        grid-area: header; /*Giving names for grid-template-areas*/
+      }
+      #sideBar {
+        grid-area: sideBar;
+      }
+      #c1 {
+        grid-area: c1;
+      }
+      #c2 {
+        grid-area: c2;
+      }
+      #c3 {
+        grid-area: c3;
+      }
+      #c4 {
+        grid-area: c4;
+      }
+      #c5 {
+        grid-area: c5;
+      }
+
+      #c6 {
+        grid-area: c6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="header">box1</div>
+      <div class="box" id="sideBar">box2</div>
+      <div class="box" id="c1">box3</div>
+      <div class="box" id="c2">box4</div>
+      <div class="box" id="c3">box5</div>
+      <div class="box" id="c4">box6</div>
+      <div class="box" id="c5">box7</div>
+      <div class="box" id="c6">box8</div>
+    </div>
+  </body>
+</html>

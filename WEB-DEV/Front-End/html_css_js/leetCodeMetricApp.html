@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeetCode-Metric-App</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="./leetcode.ico" />
+    <link rel="stylesheet" href="./leetCodeMetricApp.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="logoHeading">
+        <img src="./leetcode.ico" alt="leetcode" id="leetcodeIcon"/>
+        <h1>Leet Metric</h1>
+      </div>
+      <div class="form">
+        <h3>Enter UserName</h3>
+        <div class="mainForm">
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="Enter UserName"
+            required />
+          <button type="submit" id="submitButton">Search</button>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="progress">
+          <div class="progressItems">
+            <div class="easyProgress circle">
+              <span id="easyLabel" class="label">-/-</span>
+              <span id="easydes">Easy</span>
+            </div>
+          </div>
+          <div class="progressItems">
+            <div class="mediumProgress circle">
+              <span id="mediumLabel" class="label">-/-</span>
+              <span id="mediumdes">Medium</span>
+            </div>
+          </div>
+          <div class="progressItems">
+            <div class="hardProgress circle">
+              <span id="hardLabel" class="label">-/-</span>
+              <span id="harddes">Hard</span>
+            </div>
+          </div>
+        </div>
+        <div class="statsCards">
+          <!-- inserting card here from js -->
+        </div>
+      </div>
+    </div>
+    <script src="./leetCodeMetricApp.js"></script>
+  </body>
+</html>

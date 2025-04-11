@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Listeners</title>
+  </head>
+  <body>
+    <!-- HomeWork == "Check how .DOMContentLoaded event can be used to add script dynamically-->
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+        reprehenderit culpa? Iste at, nobis error voluptate veritatis molestiae
+        odit aperiam!
+      </p>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Carrot</li>
+      </ul>
+      <button>Try ME</button>
+      <div class="wrapper">
+        <span>1st para</span>
+        <span>2nd para</span>
+        <span>3rd para</span>
+        <span>4th para</span>
+      </div>
+    </div>
+    <a href="https://ww.google.com">Click Here</a>
+    <script>
+      //any event traverse in tree hierarchy from root to the target (this is Capturing phase)
+      //And when event goes back from target to the root is known as Bubbling phase
+      function changeText(
+        event
+      ) /*Listeners function automatically captures the event*/ {
+        document.querySelector("p").textContent =
+          "Kesa diya phir nhi diya accha";
+        document.querySelector("div").innerHTML += event;
+      }
+      document.querySelector("p").addEventListener("mouseover", changeText); //addEventListener applies on Bubbling phase by default
+      //   document.querySelector("p").addEventListener("mouseover", changeText , true);//Now it is applying on capturing phase
+      //   document.querySelector("p").removeEventListener("mouseover", changeText);
+      let preventingDefault = (event) => {
+        event.preventDefault(); //prevent behavior was to get me to the Google
+        document.querySelector("a").textContent =
+          "Click ho gya bhai!!Kya chahta he";
+      };
+      document.querySelector("a").addEventListener("click", preventingDefault);
+      let getParaInfo = (event) => {
+        if (event.target.nodeName === "SPAN") {
+          //run only for span now else for all
+          alert("You clicked: " + event.target.textContent);
+        }
+      };
+      //   let paras = document.querySelectorAll("span");
+      //   paras.forEach((para) => {
+      //     para.addEventListener("click", getParaInfo);
+      //   }); OR I could do this
+      document.querySelector(".wrapper").addEventListener("click", getParaInfo);
+
+      //   document.addEventListener("click", getParaInfo);//apply addEventListener to all the children
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <feildset style="display: inline; background-color: rgb(155, 179, 225)">
+        <legend>Job Application</legend>
+        <label for="name">Name:</label><br /><input
+          type="text"
+          placeholder="Enter your name"
+          id="name" /><br /><label for="email">Email</label><br /><input
+          type="email"
+          id="email"
+          placeholder="Enter your email" /><br /><label for="phone"
+          >Phone:</label
+        ><br /><input
+          type="tel"
+          id="phone"
+          placeholder="Enter your phone number" /><br /><label for="resume"
+          >Resume:</label
+        ><br /><input type="file" id="resume" value="Choose file" /><br /><label
+          for="experience"
+          >Experience(years)</label
+        ><br />
+        <select name="Experienceselector" id="experience">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">4+</option>
+        </select>
+        <feildset>
+          <legend>Skills</legend>
+          <input type="checkbox" id="html" /><br /><label for="html">HTML</label
+          ><br /><input type="checkbox" id="css" /><br /><label for="css"
+            >CSS</label
+          ><br /><input type="checkbox" id="js" /><br /><label for="js"
+            >JS</label
+          ><br
+        /></feildset>
+        <label for="educationselector">Heighest Education</label><br />
+        <select name="eduselector" id="educationselector">
+          <option value="">High School</option>
+          <option value="">College</option>
+          <option value="">University</option></select
+        ><br /><label for="availabilty">Availabilty:</label><br />
+        <feildset>
+          <input type="radio" id="full" name="radiobuttons" /><br /><label
+            for="full"
+            >Full Time</label
+          ><br /><input
+            type="radio"
+            id="part"
+            name="radiobuttons" /><br /><label for="part"
+            >Part Time</label
+          > </feildset
+        ><br /><label for="comments">Additional Comments:</label><br /><textarea
+          name="commentArea"
+          id="comments"
+          placeholder="Enter any comment"></textarea>
+        <br />
+        <input type="submit" value="Subit form" />
+      </feildset>
+    </form>
+  </body>
+</html>

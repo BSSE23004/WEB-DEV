@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations1</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: blueviolet;
+        border: 3px solid black;
+        height: 400px;
+        width: 500px;
+        border-radius: 20px;
+        display: flex;
+      }
+      .box {
+        border: 2px solid black;
+        height: 25%;
+        width: 25%;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+      }
+      #box1 {
+        animation-name: upDown; /*animation-name used for giving the name to use in key frames as its id */
+        animation-duration: 2s; /*duration of animation used to control the speed of animation*/
+        animation-delay: 1s; /* delay time before animation to start*/
+        /* animation-iteration-count: infinite; no.of times the animation should be performed */
+        animation-timing-function: cubic-bezier(
+          0,
+          0,
+          0,
+          0
+        ); /*timing-function : how the object will move (cubic-bezier =custom timing function)*/
+        /* animation-direction: alternate; tell the direction of starting and ending of the animation */
+        animation-fill-mode: both; /* fill-mode tells what to do after animation or last keyframe (both) option adapts the style of both first and last keyframes  */
+        animation-play-state: running; /*play-state tells the animation to run or pause (it is used with JS)*/
+        background-color: red;
+      }
+      #box2 {
+        background-color: green;
+        /* @keyframes duration | easing-function | delay |
+        iteration-count | direction | fill-mode | play-state | name */
+        animation: 3s ease-in 1s 2 reverse both running upDown;
+      }
+      #box3 {
+        background-color: yellow;
+        /*Syntax : name duration timing-function delay iteration-count direction */
+        animation: upDown 2s linear 1s infinite alternate;
+      }
+      #box4 {
+        background-color: blue;
+        animation-name: hehe;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        /* animation: 10s, ease-in, 0s, infinite alternate running; */
+      }
+      @keyframes hehe {
+        0% {
+          top: 0%;
+          left: 100%;
+        }
+        33% {
+          left: 100%;
+          top: 100%;
+        }
+        66% {
+          top: 100%;
+          left: 0%;
+        }
+        100% {
+          left: 0%;
+          top: 0%;
+        }
+      }
+
+      @keyframes upDown {
+        from {
+          /*from where it will start*/
+          top: 10px;
+          left: 10px;
+        }
+        to {
+          /*to where it will end*/
+          left: 100px;
+          top: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+    </div>
+  </body>
+</html>

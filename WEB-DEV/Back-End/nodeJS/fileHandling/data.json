@@ -1,0 +1,8 @@
+{
+  "name": "jhon doe",
+  "age": 20,
+  "address": {
+    "city": "new york",
+    "state": "ny"
+  }
+}

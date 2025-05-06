@@ -1,6 +1,9 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const users = require("./MOCK_DATA.json");
+const connectDB = require("./db"); // Import the database connection module
+
+connectDB(); // Connect to the database
 const fs = require("fs");
 dotenv.config();
 const app = express();

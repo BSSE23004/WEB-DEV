@@ -4,9 +4,7 @@ dotenv.config(); // .config() method loads environment variables from a .env fil
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
-      useNewUrlParser: true,
-    });
+    const conn = await mongoose.connect(process.env.MONGODB_CONNECTION_STRING);
     console.log(`MongoDB Connected: {conn.connection.host}`);
   } catch (error) {
     console.error(error.message);
